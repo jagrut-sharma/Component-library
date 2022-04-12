@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <!-- <style> CSS way1: style tag in head element
+        body 
+        {
+            color: red
+        }
+    </style> -->
+    <!-- 3rd way of doing CSS ----- most followed by industry --- create a separate and then import it-->
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Jagrut's Component Library</h1>
+    <!-- 2nd way to write CSS:-->
+    <!-- <h1 style="color: brown">Jagrut's Component Library</h1>  -->
+    <h1 id="lib-header">Jagrut's Component Library</h1>
 
-    <p>I am attending neog.camp and i want to make a library which would make all my projects look good and consistent
+
+    <p class="para">I am attending neog.camp and i want to make a library which would make all my projects look good and consistent
     </p>
 
     <hr>
@@ -27,7 +38,7 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <p>This is a fluid container and it will go till the end of the page.</p>
+    <p class="para">This is a fluid container and it will go till the end of the page.</p>
     <h3>fluid container</h3>
     <p>This is a centered container and it will go till the specified width</p>
 
