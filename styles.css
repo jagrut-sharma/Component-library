@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 .container {
@@ -71,7 +72,7 @@ hr {
 }
 
 .nav .link {
-    color: black;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -99,6 +100,7 @@ hr {
 .hero .hero__heading {
     padding-top: 1rem;
     color: var(--dark-gray);
+    text-align: center;
 }
 
 .hero .hero-heading-focus {
@@ -109,14 +111,30 @@ hr {
     color: var(--green-color);
 }
 
-.section{
+.section {
     padding: 2rem;
 }
 
-.section h1{
+.section h1 {
     text-align: center;
 }
 
-.section-ow{
+.section-ow {
     background-color: var(--off-white);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: var(--secondary-color);
+}
+
+.footer ul {
+    padding-inline-start: 0px;
 }
