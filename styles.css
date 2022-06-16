@@ -2,6 +2,8 @@
 
 :root{
     --primary-color: #F9A826;
+    --secondary-color: black;
+    --light-gray: #94a3b8;
 }
 
 body {
@@ -51,6 +53,8 @@ hr {
     padding: 0rem 0.5rem;
 }
 
+/* Navigation */
+
 .nav{
 background-color: var(--primary-color);
 color: black;
@@ -75,4 +79,25 @@ border-bottom-left-radius: 1rem;
 .nav .link-active{
     font-weight: bold;
     color: green;
+}
+
+/* Header */
+
+.hero{
+    padding: 2rem;
+}
+
+.hero .hero__img{
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero__heading{
+    padding-top: 1rem;
+    color: var(--light-gray);
+}
+
+.hero .hero-heading-focus{
+    color: var(--primary-color);
 }
