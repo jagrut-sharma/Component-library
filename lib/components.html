@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>Jagrut's Component Library</h1>
+
+
+    <p>I am attending neog.camp and i want to make a library which would make all my projects look good and consistent
+    </p>
+
+    <hr>
+
+    <h2>@typography</h2>
+
+    <h1>This is the biggest heading</h1>
+    <h2>This is the second biggest heading</h2>
+    <p>Let me show you the normal text. This is free flowing and will wrap at the end like a paragraph</p>
+    <p>This paragraph will have a <strong>bold</strong> text</p>
+    <small>This is relatively smaller text</small>
+
+    <hr>
+
+    <h2>@container</h2>
+
+    <h3>fluid container</h3>
+    <p class="container">This is a fluid container and it will go till the end of the page.</p>
+    <h3>Center container</h3>
+    <p class="container container-center">This is a centered container and it will go till the specified width</p>
+
+    <hr>
+
+    <h2>@links</h2>
+    <a href="/" class="link link-primary">Primary link</a>
+    <a href="/" class="link link-secondary">Secondary Link</a>
+
+    <hr>
+
+    <h2>@lists</h2>
+    <h3>Unordered lists</h3>
+    <p>This list will not have bullet</p>
+    <ul class="list list-nobullet">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+    <h3>unordered inline lists</h3>
+    <ul class="list list-nobullet">
+        <li class="list-inline">Inline Item One</li>
+        <li class="list-inline">Inline Item Two</li>
+        <li class="list-inline">Inline Item Three</li>
+    </ul>
+    <h3>reverse ordered list</h3>
+    <ol reversed>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2>
+    <nav class="nav container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-nobullet nav-list">
+            <li class="list-inline">
+                <a href="/" class="link link-active">home</a>
+            </li>
+            <li class="list-inline">
+                <a href="/" class="link">products</a>
+            </li>
+            <li class="list-inline">
+                <a href="/" class="link">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>@header</h2>
+    <header class="hero">
+        <img src="../images/hero_orange.svg" alt="A girl sitting on a huge react symbol" class="hero__img" />
+        <h1 class="hero__heading">Hi! This is <span class="hero-heading-focus">Jagrut</span>. A <span
+                class="hero-heading-focus2">Web Developer</span> </h1>
+    </header>
+
+    <hr>
+
+    <h2>@section</h2>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>We're always striving to connect developers more seamlessly with the tools and information they need to
+                easily build projects on the open Web. Since our beginnings in 2005, Mozilla and the community have
+                amassed around 45,000 pages of free, open-source content.</p>
+        </div>
+    </section>
+    <section class="section section-ow">
+        <div class="container container-center">
+            <h1>off-white section</h1>
+            <p>We're always striving to connect developers more seamlessly with the tools and information they need to
+                easily build projects on the open Web. Since our beginnings in 2005, Mozilla and the community have
+                amassed around 45,000 pages of free, open-source content.</p>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <h2>@footer</h2>
+    <footer class="footer">
+        <p class="footer__header">Some small heading inside footer</p>
+        <ul class="list-nobullet">
+            <li class="list-inline">
+                <a class="link" href="/">socialOne</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialTwo</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialThree</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
