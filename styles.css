@@ -41,3 +41,13 @@ hr {
     font-weight: 600;
     border-radius: 00.5rem;
 }
+
+.list-nobullet{
+    list-style: none;
+    padding: 0rem;
+}
+
+.list-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
