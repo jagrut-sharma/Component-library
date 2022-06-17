@@ -43,6 +43,8 @@ hr {
     border-radius: 1rem;
     color: var(--secondary-color);
     font-weight: 600;
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 
 .link-secondary {
@@ -50,6 +52,7 @@ hr {
     color: var(--secondary-color);
     font-weight: 600;
     border-radius: 00.5rem;
+
 }
 
 .list-nobullet {
