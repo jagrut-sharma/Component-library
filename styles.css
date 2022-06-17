@@ -68,12 +68,18 @@ hr {
 
 .nav .nav-brand {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .nav .link {
     color: var(--secondary-color);
     font-weight: 600;
+}
+
+.nav .link__header{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .nav .nav-list {
