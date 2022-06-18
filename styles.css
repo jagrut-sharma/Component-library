@@ -23,7 +23,7 @@ body {
     text-justify: auto;
 }
 
-.container .section__text{
+.container .section__text {
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ hr {
     font-weight: 600;
 }
 
-.nav .link__header{
+.nav .link__header {
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -154,7 +154,7 @@ hr {
     padding-inline-start: 0px;
 }
 
-.footer .footer__header{
+.footer .footer__header {
     font-weight: bold;
     font-size: 1.2rem;
 }
