@@ -23,10 +23,6 @@ body {
     text-justify: auto;
 }
 
-.container .section__text {
-    text-align: center;
-}
-
 hr {
     margin: 2rem 0rem;
 }
@@ -40,11 +36,9 @@ hr {
 
 .link-primary {
     background-color: var(--primary-color);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     color: var(--secondary-color);
     font-weight: 600;
-    display: inline-block;
-    margin-top: 0.5rem;
 }
 
 .link-secondary {
@@ -52,7 +46,6 @@ hr {
     color: var(--secondary-color);
     font-weight: 600;
     border-radius: 00.5rem;
-
 }
 
 .list-nobullet {
@@ -75,22 +68,12 @@ hr {
 
 .nav .nav-brand {
     font-weight: bold;
-    font-size: 1.5rem;
-    padding-top: 1rem;
+    font-size: 1.2rem;
 }
 
 .nav .link {
     color: var(--secondary-color);
     font-weight: 600;
-}
-
-.nav .link-hover:hover{
-    color: maroon;
-}
-
-.nav .link__header {
-    text-decoration: none;
-    color: var(--secondary-color);
 }
 
 .nav .nav-list {
@@ -106,7 +89,6 @@ hr {
 
 .hero {
     padding: 2rem;
-    padding-top: 5rem;
 }
 
 .hero .hero__img {
@@ -131,7 +113,6 @@ hr {
 
 .section {
     padding: 2rem;
-    text-align: center;
 }
 
 .section h1 {
@@ -156,9 +137,4 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
-}
-
-.footer .footer__header {
-    font-weight: bold;
-    font-size: 1.2rem;
 }
