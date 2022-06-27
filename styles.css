@@ -280,6 +280,15 @@ hr {
     color: var(--secondary-color);
 }
 
+.header .nav .list-padding .link-active{
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.header .logo .logo-link:hover{
+    color: beige;
+}
+
 @media screen and (min-width: 800px) {
     
     .nav-toggle-label{
