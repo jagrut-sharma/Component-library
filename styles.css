@@ -8,9 +8,15 @@
     --off-white: #f4f4f5;
 }
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .container {
@@ -59,32 +65,157 @@ hr {
 
 /* Navigation */
 
-.nav {
+.header{
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    transform: scale(1,0);
+    transition: transform 350ms ease-in-out;
+    transform-origin: top;
+}
+
+.header .logo{
+    margin: 0;
     padding: 1rem;
-    border-bottom-left-radius: 1rem;
 }
 
-.nav .nav-brand {
-    font-weight: bold;
-    font-size: 1.2rem;
+.nav .list-non-bullet{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.nav .link {
+.nav .list-padding{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.nav .list-non-bullet .normal-text-link{
+    text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
-.nav .nav-list {
-    text-align: right;
-}
-
-.nav .link-active {
-    font-weight: bold;
+.nav .normal-text-link:hover{
     color: var(--green-color);
 }
 
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav .normal-text-link{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after{
+    display: block;
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 2em;
+    position: relative;
+    border-radius: 2px;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .nav-toggle-label{
+        display: none;
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo{
+        grid-column: 2 / 3;
+    }
+
+    .nav{
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav .list{
+        display: flex;
+    }
+
+    .nav .list-padding{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    .nav .list-non-bullet .normal-text-link{
+        opacity: 1;
+        position: relative;
+    }
+
+    .nav .list-non-bullet .normal-text-link::before{
+        content: "";
+        display: block;
+        background-color: var(--green-color);
+        height: 3px;
+        position: absolute;
+        bottom: -0.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: center;
+        transition: transform ease 250ms;
+    }    
+    .nav .list-non-bullet .normal-text-link:hover::before{
+        transform: scale(1, 1);
+    }
+}
+
+/* Navigation ends */
 /* Header */
 
 .hero {
