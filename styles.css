@@ -160,6 +160,11 @@ hr {
     top: 7px;
 }
 
+.header .logo-link{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 @media screen and (min-width: 800px) {
     
     .nav-toggle-label{
@@ -168,7 +173,7 @@ hr {
 
     .header{
         display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 0.5fr auto minmax(600px, 3fr) 1fr;
     }
 
     .logo{
@@ -216,6 +221,7 @@ hr {
 }
 
 /* Navigation ends */
+
 /* Header */
 
 .hero {
@@ -242,6 +248,8 @@ hr {
     color: var(--green-color);
 }
 
+/* sections */
+
 .section {
     padding: 2rem;
 }
@@ -253,6 +261,8 @@ hr {
 .section-ow {
     background-color: var(--off-white);
 }
+
+/* footer */
 
 .footer {
     background-color: var(--primary-color);
@@ -268,4 +278,8 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+.footer .link:hover{
+    color: var(--green-color);
 }
