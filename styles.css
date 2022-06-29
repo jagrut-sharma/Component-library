@@ -376,8 +376,13 @@ hr {
 
 .section {
     padding: 2rem;
+    text-align: center;
 }
 
+.section .container p{
+    text-align: justify;
+    text-align-last: center;
+}
 .section h1 {
     text-align: center;
 }
