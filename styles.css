@@ -412,3 +412,8 @@ hr {
 .footer .link:hover{
     color: var(--green-color);
 }
+
+::selection{
+    background: var(--primary-color);
+    color: #000;
+}
